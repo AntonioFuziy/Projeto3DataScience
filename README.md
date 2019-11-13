@@ -1,6 +1,7 @@
 # Projeto 3  Ciencia de Dados- Insper 2019
 
 Alunos:
+
 **Willian Kenzo Asanuma Lee** : williankal@al.insper.edu.br
 
 **Ramon Menegatto** : ramonmg@al.insper.edu.br
