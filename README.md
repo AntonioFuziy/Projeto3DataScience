@@ -12,5 +12,7 @@ Alunos:
 
 Projeto de Ciencia de dados do Insper, que tem como proposta determinar se o funcionário poderá vir a sair da empresa ou não utilizando como metódos, *random-forest*, *regressão logística* , *SVM*
 
+* 1: Análise
+
 **Como estamos utilizando plotly para fazer alguns gráficos, é necessário baixar o git inteiro ou usar o html para ver algum de nossos gráficos que utlizam plotly como base**
 
