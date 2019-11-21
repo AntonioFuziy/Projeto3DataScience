@@ -4,7 +4,7 @@ Alunos:
 
 **Willian Kenzo Asanuma Lee** : williankal@al.insper.edu.br
 
-**Ramon Menegatto** : ramonmg@al.insper.edu.br
+**Ramon Menegatto Gonzalez** : ramonmg@al.insper.edu.br
 
 **Antonio Vieira Fuziy** : antoniovf@al.insper.edu.br
 
