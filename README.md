@@ -18,3 +18,4 @@ Projeto de Ciencia de dados do Insper, que tem como proposta determinar se o fun
 
 **Como estamos utilizando plotly para fazer alguns gráficos, é necessário baixar o git inteiro ou usar o html para ver algum de nossos gráficos que utlizam plotly como base**
 
+O arquivo *tarefas* mostra o que cada integrante do grupo fez durante o projeto, além de falar quais problemas o grupo teve ao decorrer do trabalho, como commits errados.
