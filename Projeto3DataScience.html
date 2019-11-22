@@ -17740,7 +17740,7 @@ weighted avg       0.83      0.85      0.82       500
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[174]:</div>
+<div class="prompt input_prompt">In&nbsp;[179]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">svclassifier1</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)</span>
@@ -17776,7 +17776,7 @@ The default value of gamma will change from &#39;auto&#39; to &#39;scale&#39; in
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[175]:</div>
+<div class="prompt input_prompt">In&nbsp;[180]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">target_val</span><span class="p">,</span><span class="n">y_pred1</span><span class="p">))</span>
@@ -17840,7 +17840,7 @@ Precision and F-score are ill-defined and being set to 0.0 in labels with no pre
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[181]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">y_pred1</span><span class="p">,</span><span class="n">target_val</span><span class="p">,</span><span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span>
@@ -17856,7 +17856,7 @@ Precision and F-score are ill-defined and being set to 0.0 in labels with no pre
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[176]:</div>
+    <div class="prompt output_prompt">Out[181]:</div>
 
 
 
@@ -17917,7 +17917,7 @@ Precision and F-score are ill-defined and being set to 0.0 in labels with no pre
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[177]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">svclassifier2</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
@@ -17931,16 +17931,103 @@ Precision and F-score are ill-defined and being set to 0.0 in labels with no pre
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[385  35]
+ [ 36  44]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.92      0.92       420
+           1       0.56      0.55      0.55        80
+
+    accuracy                           0.86       500
+   macro avg       0.74      0.73      0.73       500
+weighted avg       0.86      0.86      0.86       500
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[178]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">y_pred3</span><span class="p">,</span><span class="n">target_val</span><span class="p">,</span><span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[178]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attrition</th>
+      <th>0</th>
+      <th>1</th>
+    </tr>
+    <tr>
+      <th>row_0</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.916667</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.083333</td>
+      <td>0.55</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
