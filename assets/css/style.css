@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: #000000;
+}
+
+@keyframes fadeAnimation{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeNotification{
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeLoadY{
+    from{
+        transform: translateY(-30%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeLoadX{
+    from{
+        transform: translateX(20%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+        transform: translateX(200%);
+    }
+}
+
+@keyframes fadeNotificationOut{
+    from{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    to{
+        opacity: 0;
+        transform: translateY(-70%);
+    }
+}
+
+@keyframes fadeImageIn{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeImageOut{
+    from{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* placeholder animation -=-==-=-=-=-=-=-=-=- */
+
+@keyframes fadePlaceholder{
+    from{
+        background-color: #ffffff;
+        box-shadow: 0 2px 0 0 #c6c6c6;
+    }
+
+    to{
+        background-color: #f7f7f7;
+        box-shadow: 0 2px 0 0 #7159c1;
+    }
+}
+
+@keyframes fadeFocus{
+    from{
+        padding-left: 10px;
+        font-size: 1.05rem;
+    }
+
+    to{
+        padding-left: 0;
+        font-size: 0.75rem;
+    }
+}
+
+@keyframes fadeHoverButtons{
+    from{
+        color: #000000;
+        background: linear-gradient(120deg, #3498db,#8e44ad);
+    }
+    
+    to{
+        color: #ffffff;
+        background: linear-gradient(200deg, #3498db,#8e44ad);
+    }
+}
+
+#notification{
+    z-index: 3;
+    border-radius: 10px;
+    position: absolute;
+    top: 5%;
+    left: 37%;
+    width: 400px;
+    height: 40px;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #000000;
+    animation-name: fadeNotification;
+    color: #ffffff;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+#notification p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.ok-button{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    width: 60px;
+    height: 30px;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+}
+
+.ok-text{
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.ok-button:hover{
+    background-color: #dbdbdb;
+    color: #7159C1;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box{
+    border-radius: 10px;
+    opacity: 0.9;
+    margin-top: 1%;
+    margin-left: 35%;
+    position: absolute;
+    z-index: 2;
+    width: 450px;
+    height: 700px;
+    background-color: #ffffff;
+    animation-name: fadeLoadY;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#photo-background{
+    animation-name: fadeAnimation;
+}
+
+.idade-text{
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#input-idade {
+    position: absolute;
+    left: 9%;
+    top: 13%;
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    border-style: none;
+    box-shadow: 0 2px 0 0 #c6c6c6;
+}
+
+#input-idade::placeholder{
+    font-family: 'Roboto';
+    padding-left: 10px;
+    font-size: 1.05rem;
+}
+
+#input-idade:hover{
+    animation-name: fadePlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#input-idade:focus{
+    animation-name: fadePlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#input-idade:hover::placeholder{
+    color: #7159C1;
+}
+
+#input-salario{
+    position: absolute;
+    left: 9%;
+    top: 28%;
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    border-style: none;
+    box-shadow: 0 2px 0 0 #c6c6c6;
+}
+
+#input-salario:hover{
+    animation-name: fadePlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#input-salario:focus{
+    animation-name: fadePlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+#input-salario::placeholder{
+    font-family: 'Roboto';
+    padding-left: 10px;
+    font-size: 1.05rem;
+}
+
+#input-salario:hover::placeholder{
+    color: #7159C1;
+}
+
+.salario-text{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    text-align: center;
+}
+
+.gender-text{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 36%;
+    width: 100%;
+    text-align: center;
+}
+
+#input-gender{
+    position: absolute;
+    left: 9%;
+    top: 42%;
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    border-style: none;
+    box-shadow: 0 2px 0 0 #c6c6c6;
+}
+
+#input-gender::placeholder{
+    font-family: 'Roboto';
+    padding-left: 10px;
+    font-size: 1.05rem;
+}
+
+#input-gender:hover::placeholder{
+    color: #7159C1;
+}
+
+#input-gender:hover{
+    animation-name: fadePlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#input-gender:focus{
+    animation-name: fadePlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.overtime-text{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    text-align: center;
+}
+
+.button-Overtime-yes{
+    background: linear-gradient(120deg, #3498db,#8e44ad);
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 60%;
+    left: 27%;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.button-Overtime-no{
+    background: linear-gradient(120deg, #3498db,#8e44ad);
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 60%;
+    left: 63%;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.button-Overtime-no p{
+    margin-top: 5px;
+}
+
+.button-Overtime-yes p{
+    margin-top: 5px;
+}
+
+.button-Overtime-yes:hover{
+    color: #000000;
+    animation-name: fadeHoverButtons;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.button-Overtime-no:hover{
+    color: #000000;
+    animation-name: fadeHoverButtons;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.estado-civil-text{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 71%;
+    width: 100%;
+    text-align: center;
+}
+
+#input-estado-civil{
+    position: absolute;
+    left: 9%;
+    top: 78%;
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    border-style: none;
+    box-shadow: 0 2px 0 0 #c6c6c6;
+}
+
+#input-estado-civil:hover{
+    animation-name: fadePlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#input-estado-civil:focus{
+    animation-name: fadePlaceholder;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#input-estado-civil::placeholder{
+    font-family: 'Roboto';
+    padding-left: 10px;
+    font-size: 1.05rem;
+}
+
+#input-estado-civil:hover::placeholder{
+    color: #7159C1;
+}
+
+.confirmar{
+    background: linear-gradient(120deg, #3498db,#8e44ad);
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    top: 88%;
+    left: 35%;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.confirmar p {
+    margin-top: 10px;
+}
+
+.confirmar:hover{
+    animation-name: fadeHoverButtons;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/* -=-Aviso resultado=-=-=-=-==-=-=-=--=-=-=-=-=-=-=-=-=-==-=-=-=--=-=-=-=-=-=-=-=-=-==-=-=-=--=-=-=-=-=-=-=-=-=-==-=-=-=--=-=-=-=-=-=-=-=-=*/
+
+#container-result{
+    display: none;
+    border-radius: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    left: 32.2%;
+    background-color: #f0f0f0;
+    width: 35%;
+    height: 60%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.titulo-resultado{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#resultado{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: #BF102D;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.ok-button-final{
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 3;
+    position: absolute;
+    left: 44%;
+    top: 75%;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.ok-button-final:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.ok-button-final-text{
+    margin-top: 4px;
+}
+
+.loading-text{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 11;
+    color: #61dafb;
+    background-color: #000000;
+    animation-delay: 2s;
+    animation-name: fadeOut;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.loading{
+    z-index: 11;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    animation-delay: 2s;
+    animation-name: fadeOut;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
