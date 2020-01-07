@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta>
+    <title>first</title>
+</head>
+<body>
+    <div id="notification">
+        <p>Este é nosso app</p>
+        <div class="ok-button" onclick="dissapear()">
+            <p class="ok-text">OK</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="assets/img/background.jpg" alt="primeira-foto" id="photo-background" width="1500px" height="734px">
+
+        <div class="box">
+            <p class="idade-text">Qual a sua idade?</p>
+            <input type="text" name="idade" id="input-idade" placeholder="Sua idade" onclick="focusPlaceholder()">
+            
+            <p class="salario-text">Qual o seu salário?</p>
+            <input type="text" name="salario" id="input-salario" placeholder="Seu salário">
+
+            <p class="gender-text">Qual o seu gênero?</p>
+            <input type="text" name="formacao" id="input-gender" placeholder="Seu gênero">
+
+            <p class="overtime-text">Tem o hábito de fazer hora extra?</p>
+            <div class="button-Overtime-yes" onclick="overtimeYes()">
+                <p>Yes</p>
+            </div>
+            <div class="button-Overtime-no" onclick="overtimeNo()">
+                <p>No</p>
+            </div>
+
+            <p class="estado-civil-text">Qual o estado civil?</p>
+            <input type="text" name="estado_civil" id="input-estado-civil" placeholder="Seu estado civil">
+
+            <div class="confirmar" onclick="confirm()">
+                <p>Confirmar</p>
+            </div>
+        </div>
+        <div id="container-result">
+            <p class="loading-text">Gerando seu resultado...</p>
+            <img src="assets/img/loading.gif" alt="loading" class="loading">
+            <p class="titulo-resultado">Seu resultado:</p>
+            <p id="resultado"></p>
+            <div class="ok-button-final" onclick="location.href='first.html'">
+                <p class="ok-button-final-text">OK</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/first.js"></script>
+    <script src="assets/js/data.js"></script>
+</body>
+</html>
